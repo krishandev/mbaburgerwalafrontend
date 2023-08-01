@@ -1,0 +1,58 @@
+@import 'colors';
+
+.profile{
+    background-color: $pink;
+    height: 100vh;
+    width: 100%;
+
+    >main{
+        max-width: 900px;
+        background-color: white;
+        margin: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        >img{
+            width: 15rem;
+            height: 15rem;
+            border-radius: 100%;
+            margin: 1rem;
+        }
+        >h5{
+            margin: 1rem;
+            font-size: 1.5rem;
+        }
+        >div{
+            margin: 1rem;
+            >a{
+                background-color: $red;
+                color: white;
+                padding: 0.7rem 1.5rem;
+                border-radius: 5px;
+                font-size: 1rem;
+
+                >svg{
+                    margin-right: 5px;
+                }
+
+                &:hover{
+                    background-color: $reddark;
+                }
+            }
+
+        }
+        >button{
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            
+            &:hover{
+                background-color: grey;
+            }
+        }
+    }
+}

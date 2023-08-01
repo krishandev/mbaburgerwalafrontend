@@ -1,0 +1,57 @@
+@import 'colors';
+
+.orderDetails{
+    background-color: $pink;
+    width: 100%;
+    >main{
+        background-color: white;
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+        overflow-x: auto;
+        
+
+        >h1{
+            text-transform: uppercase;
+            font: 100 3rem "Roboto";
+            text-align: center;
+        }
+        >div{
+            margin: 2rem;
+            text-align: center;
+            >h2{
+                letter-spacing: 5px;
+            }
+            >p{
+                margin: 1rem;
+                letter-spacing: 2px;
+                >b{
+                    margin-right: 1rem;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+        >article{
+            >h1{
+                font-size: 1.8rem;
+                text-transform: uppercase;
+                letter-spacing: 5px;
+                margin: 2rem 0;
+            }
+            >div{
+                background-color: rgb(246, 246, 246);
+                margin: 1rem 0;
+                display: flex;
+                justify-content: space-between;
+                padding: 1rem;
+                align-items: center;
+                border-radius: 5px;
+                font-weight: 100;
+
+               
+            }
+        }
+
+
+    }
+}

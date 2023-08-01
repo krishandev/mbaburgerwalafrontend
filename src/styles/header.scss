@@ -1,0 +1,44 @@
+@import 'colors';
+
+nav{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    height: 5rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.229);
+    align-items: center;
+
+    >div{
+        display: flex;
+        align-items: center;
+
+        >a{
+            margin:  0 2rem;
+            transition: all 0.5s;
+            color: $dark;
+        }
+        >a:hover{
+            color: $lightdark
+        }
+        >svg{
+            color: $red;
+            font-size: 3rem;
+            transition: inherit;
+            &:hover{
+                color: $lightdark;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:600px) {
+    nav{
+        padding: 1rem;
+        >div>a{
+            margin: 0 0.5rem;
+        }
+    }
+    
+}

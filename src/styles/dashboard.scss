@@ -1,0 +1,105 @@
+@import 'colors';
+
+.dashboard{
+    background-color: $pink;
+    height: 100vh;
+    width: 100%;
+
+    >main{
+        background-color: white;
+        max-width: 900px;
+        height: 100%;
+        margin: auto;
+
+        >section{
+            
+            display: flex;
+            justify-content: space-between;
+            padding: 6rem;
+            >div{
+                display: flex;
+                flex-direction: column;
+                width: 50%;
+                justify-content: center;
+                align-items: center;
+                
+                >a{
+                    margin: 1rem;
+                    background-color: $dark;
+                    color: white;
+                    padding: 1rem;
+                    width: 50%;
+                    text-align: center;
+                    white-space: nowrap;
+                    border-radius: 5px;
+
+                    &:hover{
+                        background-color: $reddark;
+                    }
+                }
+            }
+            >aside{
+                width: 50%;
+            }
+        }
+        >article{
+            background-color: $dark;
+            display: flex;
+            justify-content: space-evenly;
+            padding: 2rem;
+
+            >div{
+                background-color: white;
+                padding: 2rem 0;
+                text-align: center;
+                height: 120px;
+                width: 120px;
+                border-radius: 100%;
+            }
+        }
+
+
+    }
+}
+
+@media screen and (max-width:820px) {
+    .dashboard{
+        height: 100vmin;
+
+        >main>section{
+        padding: 2rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width:600px) {
+    .dashboard{
+        height: auto;
+        width: 100%;
+        >main{
+            >article{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+                >div{
+                    margin: 1rem;
+                }
+            }
+            >section{
+                flex-direction: column;
+                >div{
+                    width: 100%;
+                }
+                >aside{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+    
+}
